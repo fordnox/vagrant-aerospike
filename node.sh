@@ -1,6 +1,10 @@
 #!/bin/bash
 
+/sbin/chkconfig iptables off
+/etc/init.d/iptables stop
+
 yum install wget -y
+
 cd /opt
 echo "Downloading Aerospike ..."
 wget --quiet -O aerospike.tgz "http://www.aerospike.com/latest.php?package=server&os=el6"
