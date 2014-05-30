@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#yum install gcc -y
+yum install gcc -y
 yum install python-devel -y
 yum install python-setuptools -y
 easy_install markupsafe
